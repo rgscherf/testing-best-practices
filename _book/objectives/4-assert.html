@@ -1,0 +1,441 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. Assert Expectations · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5-branches.html" />
+    
+    
+    <link rel="prev" href="3-act.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../overview/framework.html">
+            
+                <a href="../overview/framework.html">
+            
+                    
+                    Framework Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../overview/example.html">
+            
+                <a href="../overview/example.html">
+            
+                    
+                    Example: Applying the Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Test Objectives</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="1-document.html">
+            
+                <a href="1-document.html">
+            
+                    
+                    1. Document Your Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="2-arrange.html">
+            
+                <a href="2-arrange.html">
+            
+                    
+                    2. Arrange Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="3-act.html">
+            
+                <a href="3-act.html">
+            
+                    
+                    3. Act on Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="4-assert.html">
+            
+                <a href="4-assert.html">
+            
+                    
+                    4. Assert Expectations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="5-branches.html">
+            
+                <a href="5-branches.html">
+            
+                    
+                    5. Test All Branches
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="6-valid-invalid.html">
+            
+                <a href="6-valid-invalid.html">
+            
+                    
+                    6. Test Valid and Invalid Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="7-readable.html">
+            
+                <a href="7-readable.html">
+            
+                    
+                    7. Write Readable Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="8-names.html">
+            
+                <a href="8-names.html">
+            
+                    
+                    8. Use Good Test Names
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="9-one-concept.html">
+            
+                <a href="9-one-concept.html">
+            
+                    
+                    9. Test One Concept at a Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4. Assert Expectations</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="assert-expectations">Assert Expectations</h1>
+<blockquote>
+<p>Do test methods make meaningful assertions about expected behavior resulting from test actions?</p>
+</blockquote>
+<p>Many tests in our current test code arrange state and act on target classes, but don&apos;t confirm that the expected behavior of the target class has actually occurred.</p>
+<p>Assertions are the heart of unit testing. They allow us to prove that our code performs the way we expect. They also allow us to document the contract of our code, by demonstrating how the target class will react to different inputs.</p>
+<p>&quot;Assert Expectations&quot; is the final part of the <a href="https://github.com/testdouble/contributing-tests/wiki/Arrange-Act-Assert" target="_blank">Arrange/Act/Assert</a> pattern. Use of this pattern is highly recommended for test classes.</p>
+<p>All test methods must assert some behavior. <strong>Assertions must be meaningful</strong>. A meaningful assertion shows something specific about your code. <a href="1-document.html">It must be clear</a> that your assertion is relevant to <a href="3-act.html">the action you have performed</a> in the test method.</p>
+<p>We recommend that each test method contain a single assertion. This encourages developers to <a href="9-one-concept.html">exercise one concept per test</a>. However, test methods can contain more than one assertion as long as both assertions are still testing one concept. For example, you may wish to use two assertions to prove that a single method call mutates two fields on the object being tested.</p>
+<p>Some developers like to extend the Arrange/Act/Assert pattern to Arrange/<strong>Assert</strong>/Act/Assert, to confirm that state has been instantiated correctly or to highlight some important part of state arrangement for a future reader. If you&apos;re comfortable with this style, go ahead and use it. Just don&apos;t go overboard!</p>
+<h2 id="examples">Examples</h2>
+<h3 id="useless-assertions">Useless assertions</h3>
+<pre><code class="lang-java"><span class="hljs-meta">@isTest</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Model_CoffeeMaker_Test</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">static</span> testmethod <span class="hljs-keyword">void</span> <span class="hljs-title">testMethod</span><span class="hljs-params">()</span> </span>{
+        Model_CoffeeMaker maker = <span class="hljs-keyword">new</span> Model_CoffeeMaker(<span class="hljs-number">20</span>) <span class="hljs-comment">// 20 ounce capacity</span>
+        System.<span class="hljs-keyword">assert</span>( maker.pourCoffee() &lt;&gt; <span class="hljs-keyword">null</span> );
+    }
+}
+</code></pre>
+<p>Assuming the test in <code>Model_CoffeeMaker_Test</code> passes, the only things we know about <code>Model_CoffeeMaker.pourCoffee()</code> is that it:</p>
+<ol>
+<li>Does not raise an exception, and</li>
+<li>Does not return <code>null</code>.</li>
+</ol>
+<p>Almost anything else could be happen when <code>.pourCoffee()</code> is called. The assertion here is not specific enough; It should tell us something precise about the result of the method call.</p>
+<h3 id="meaningful-assertions">Meaningful assertions</h3>
+<p>Here are two simple ways to ensure your assertions are meaningful:</p>
+<ul>
+<li>Try to assert what the return valus <strong>is</strong> (e.g. <code>System.assert(x == 3)</code>) rather than what it is not (e.g. <code>System.assert(x != null)</code>).</li>
+<li>The assertion should be specific enough to fail if the target class&apos;s public interface changes.</li>
+</ul>
+<p>It&apos;s easy to write meaningful assertions with these guidelines in mind. Let&apos;s write a new method for the test class above.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@isTest</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Model_CoffeeMaker_Test</span> </span>{
+    <span class="hljs-comment">// ... other test methods snipped</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">static</span> testmethod <span class="hljs-keyword">void</span> <span class="hljs-title">pourCoffee_20oz_transfers8ozToNewCup</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// Arrange</span>
+        Model_CoffeeMaker maker = <span class="hljs-keyword">new</span> Model_CoffeeMaker(<span class="hljs-number">20</span>) <span class="hljs-comment">// 20 ounce capacity</span>
+
+        <span class="hljs-comment">// Act</span>
+        Model_Coffee cup = maker.pourCoffee();
+
+        <span class="hljs-comment">// Assert</span>
+        System.<span class="hljs-keyword">assert</span>( cup.getLiquidAmount() == <span class="hljs-number">8</span> );
+        System.<span class="hljs-keyword">assert</span>( maker.getLiquidAmount() == <span class="hljs-number">12</span> );
+    }
+}
+</code></pre>
+<p>This test is clear about what <code>pourCoffee()</code> does. We can even read the test as a kind of documentation or example of how the method works. Imagine the same test, but with the Assert clauses replaced with <code>!= null</code>. Much less clear, right?</p>
+<p>Note that this method only tests one aspect of <code>pourCoffee()</code>&apos;s behavior. For example, what would have happened if <code>Model_CoffeeMaker</code> <a href="6-valid-invalid.html">were instantiated with fewer than 8 ounces of liquid</a>? This test doesn&apos;t know or care--checking that behavior <a href="9-one-concept.html">is the responsibility of another test</a>.</p>
+<h2 id="to-receive-credit-for-this-objective">To receive credit for this objective:</h2>
+<ol>
+<li>Test methods must make meaningful assertions about the result of test actions.</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3-act.html" class="navigation navigation-prev " aria-label="Previous page: 3. Act on Data">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5-branches.html" class="navigation navigation-next " aria-label="Next page: 5. Test All Branches">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. Assert Expectations","level":"2.4","depth":1,"next":{"title":"5. Test All Branches","level":"2.5","depth":1,"path":"objectives/5-branches.md","ref":"objectives/5-branches.md","articles":[]},"previous":{"title":"3. Act on Data","level":"2.3","depth":1,"path":"objectives/3-act.md","ref":"objectives/3-act.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"objectives/4-assert.md","mtime":"2017-06-15T18:27:17.204Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-15T18:18:23.788Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

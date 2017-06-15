@@ -1,0 +1,410 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1. Document Your Tests · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2-arrange.html" />
+    
+    
+    <link rel="prev" href="../overview/example.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../overview/framework.html">
+            
+                <a href="../overview/framework.html">
+            
+                    
+                    Framework Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../overview/example.html">
+            
+                <a href="../overview/example.html">
+            
+                    
+                    Example: Applying the Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Test Objectives</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="1-document.html">
+            
+                <a href="1-document.html">
+            
+                    
+                    1. Document Your Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="2-arrange.html">
+            
+                <a href="2-arrange.html">
+            
+                    
+                    2. Arrange Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="3-act.html">
+            
+                <a href="3-act.html">
+            
+                    
+                    3. Act on Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="4-assert.html">
+            
+                <a href="4-assert.html">
+            
+                    
+                    4. Assert Expectations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="5-branches.html">
+            
+                <a href="5-branches.html">
+            
+                    
+                    5. Test All Branches
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="6-valid-invalid.html">
+            
+                <a href="6-valid-invalid.html">
+            
+                    
+                    6. Test Valid and Invalid Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="7-readable.html">
+            
+                <a href="7-readable.html">
+            
+                    
+                    7. Write Readable Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="8-names.html">
+            
+                <a href="8-names.html">
+            
+                    
+                    8. Use Good Test Names
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="9-one-concept.html">
+            
+                <a href="9-one-concept.html">
+            
+                    
+                    9. Test One Concept at a Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1. Document Your Tests</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="document-your-tests">Document Your Tests</h1>
+<blockquote>
+<p>Are tests methods and classes documented at standards equivalent to other source code?</p>
+</blockquote>
+<p>Your code is meant to be read. It should display good use of method/variable names and clear logic that makes your intention clear. This isn&apos;t always possible, however--and when things get tricky, you are required to comment your code. </p>
+<h2 id="to-receive-credit-for-this-objective">To receive credit for this objective:</h2>
+<ol>
+<li><p>Code should be clearly understood by a reader who has never seen your test class (or the class being tested) before. If this is not possible--<a href="7-readable.html">see objective 7</a>--then you are required to explain your code using comments. If your code doesn&apos;t require comments to explain what&apos;s happening, awesome work! You will still receive credit for this metric.</p>
+</li>
+<li><p>All test methods should have header comments which include the test method name, author, creation date, and other metadata. The format is identical to the header comment template we use in source code. The template is reproduced below--feel free to copy.</p>
+</li>
+</ol>
+<hr>
+<p>For your reference, here is the header template we use in our source files:</p>
+<pre><code>    /**
+    |--------------------------------------------------------------------------
+    |@method        methodBeingTested_testingScenario_expectedResult
+    |--------------------------------------------------------------------------
+    |
+    |@description   under testingScenario, methodBeingTested should expectedResult.
+    |
+    |@created       5/31/2017
+    |@createdBy     Your Name
+    |@return        void
+    */
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../overview/example.html" class="navigation navigation-prev " aria-label="Previous page: Example: Applying the Framework">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2-arrange.html" class="navigation navigation-next " aria-label="Next page: 2. Arrange Data">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1. Document Your Tests","level":"2.1","depth":1,"next":{"title":"2. Arrange Data","level":"2.2","depth":1,"path":"objectives/2-arrange.md","ref":"objectives/2-arrange.md","articles":[]},"previous":{"title":"Example: Applying the Framework","level":"1.3","depth":1,"path":"overview/example.md","ref":"overview/example.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"objectives/1-document.md","mtime":"2017-06-15T18:20:20.097Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-15T18:18:23.788Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
