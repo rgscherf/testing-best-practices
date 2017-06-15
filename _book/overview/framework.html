@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="example.html" />
+    <link rel="next" href="evaluation.html" />
     
     
     <link rel="prev" href="../" />
@@ -117,7 +117,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="example.html">
+        <li class="chapter " data-level="1.3" data-path="evaluation.html">
+            
+                <a href="evaluation.html">
+            
+                    
+                    How Test Classes Are Evaluated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="example.html">
             
                 <a href="example.html">
             
@@ -301,7 +314,7 @@
                                 
                                 <h1 id="framework-overview">Framework Overview</h1>
 <p>Because it is notoriously difficult to measure code quality using machine tools, we have decided to grade our new tests using a human assessor and a simple evaluation framework. </p>
-<p>The each objective in the evaluation framework is a common-sense best practice for unit testing. Together, the objectives ensure that our tests will be meaningful, maintainable, and readable. </p>
+<p>Each objective in the evaluation framework is a common-sense best practice for unit testing. Together, the objectives ensure that our tests will be meaningful, maintainable, and readable. </p>
 <h2 id="how-the-framework-is-organized">How the framework is organized</h2>
 <p>The framework is divided into nine objectives. Each objective is a possible attribute of your code, independent from the others.</p>
 <p>Objectives are grouped into three themes. Themes describe the conceptual stages of writing tests: initiate code -&gt; run tests -&gt; (re)format tests. </p>
@@ -365,18 +378,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="how-test-classes-are-evaluated">How test classes are evaluated</h2>
-<p>Assessment follows these rules:</p>
-<ul>
-<li>Tests will be read and assessed whenever test code is checked in.</li>
-<li>The assessor will decide whether your tests achieve a given objective. </li>
-<li>The assessor will always try to give you credit when your tests make an effort to achieve an objective. </li>
-<li>In order to be accepted, test classes <strong>must meet all of the objectives</strong> in <em>Initiate Tests</em> and <em>Run Tests</em>. </li>
-<li>Additionally, aiming to meet the objectives in <em>Format Tests</em> is highly recommended. Well-formatted tests are much easier to write. Use this to your advantage.</li>
-</ul>
-<p>All assessment is done by the same team member so that the framework can be applied evenly across the team.</p>
-<p>We encourage two-way communication between yourself and the assessor. The assessor will provide feedback about each test class, which may include fixes to implement before the test class is accepted. On the other hand, you should feel free to contact the assessor at any time to ask questions or discuss concerns.</p>
-<p>Don&apos;t be freaked out by the word <strong>&quot;assessed&quot;</strong>. The assessor&apos;s job is to support you. Feel free to ask questions and talk about difficulties you are encountering. Assessments <strong>do not affect your job</strong>. We&apos;re assessing tests to compare the quality of our test classes, not the quality of our developers.</p>
 
                                 
                                 </section>
@@ -409,7 +410,7 @@
                 </a>
                 
                 
-                <a href="example.html" class="navigation navigation-next " aria-label="Next page: Example: Applying the Framework">
+                <a href="evaluation.html" class="navigation navigation-next " aria-label="Next page: How Test Classes Are Evaluated">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -420,7 +421,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Framework Overview","level":"1.2","depth":1,"next":{"title":"Example: Applying the Framework","level":"1.3","depth":1,"path":"overview/example.md","ref":"overview/example.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"overview/framework.md","mtime":"2017-06-15T18:20:13.035Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-15T18:18:23.788Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Framework Overview","level":"1.2","depth":1,"next":{"title":"How Test Classes Are Evaluated","level":"1.3","depth":1,"path":"overview/evaluation.md","ref":"overview/evaluation.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"overview/framework.md","mtime":"2017-06-15T19:53:10.420Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-15T20:00:52.787Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

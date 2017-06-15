@@ -117,7 +117,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../overview/example.html">
+        <li class="chapter " data-level="1.3" data-path="../overview/evaluation.html">
+            
+                <a href="../overview/evaluation.html">
+            
+                    
+                    How Test Classes Are Evaluated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../overview/example.html">
             
                 <a href="../overview/example.html">
             
@@ -315,7 +328,7 @@
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Model_CoffeeMaker_Test</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">static</span> testmethod <span class="hljs-keyword">void</span> <span class="hljs-title">testMethod</span><span class="hljs-params">()</span> </span>{
         Model_CoffeeMaker maker = <span class="hljs-keyword">new</span> Model_CoffeeMaker(<span class="hljs-number">20</span>) <span class="hljs-comment">// 20 ounce capacity</span>
-        System.<span class="hljs-keyword">assert</span>( maker.pourCoffee() &lt;&gt; <span class="hljs-keyword">null</span> );
+        System.<span class="hljs-keyword">assert</span>( maker.pourCoffee() != <span class="hljs-keyword">null</span> );
     }
 }
 </code></pre>
@@ -398,7 +411,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4. Assert Expectations","level":"2.4","depth":1,"next":{"title":"5. Test All Branches","level":"2.5","depth":1,"path":"objectives/5-branches.md","ref":"objectives/5-branches.md","articles":[]},"previous":{"title":"3. Act on Data","level":"2.3","depth":1,"path":"objectives/3-act.md","ref":"objectives/3-act.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"objectives/4-assert.md","mtime":"2017-06-15T18:27:17.204Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-15T18:18:23.788Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4. Assert Expectations","level":"2.4","depth":1,"next":{"title":"5. Test All Branches","level":"2.5","depth":1,"path":"objectives/5-branches.md","ref":"objectives/5-branches.md","articles":[]},"previous":{"title":"3. Act on Data","level":"2.3","depth":1,"path":"objectives/3-act.md","ref":"objectives/3-act.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"objectives/4-assert.md","mtime":"2017-06-15T19:57:46.573Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-15T20:00:52.787Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

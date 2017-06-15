@@ -4,7 +4,7 @@
 
 Many tests in our current test code simply instantiate the class being tested, relying on constructor code (and private methods called within) to reach >75% code coverage.
 
-The framework requires that tests perform specific actions on the target class. For the most part, this means calling public methods. Preferably each test will [only call one method](./9-one-concept.md) and then [check its result](./4-assert.md).
+The framework requires that tests perform specific actions on the target class. This means calling public methods on the target class. Preferably each test will [only call one method](./9-one-concept.md) and then [check its result](./4-assert.md).
 
 "Act on Data" is the second part of the [Arrange/Act/Assert](https://github.com/testdouble/contributing-tests/wiki/Arrange-Act-Assert) pattern. Use of this pattern is highly recommended for test classes.
 

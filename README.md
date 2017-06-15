@@ -8,6 +8,6 @@ We are always striving to improve code quality. Until now, however, we have been
 
 ## How to use this document
 
-The first two chapters give an overview of the testing framework and a worked example. You should be able to jump into writing good tests after reading these sections.
+The first three chapters give an overview of the testing framework and a worked example. You should be able to jump into writing good tests after reading these sections.
 
 The rest of the document is a reference covering each piece of the framework. Every reference page includes discussion about the objective, plus detailed requirements about how to meet it.

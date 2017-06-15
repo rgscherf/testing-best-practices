@@ -2,7 +2,7 @@
 
 Because it is notoriously difficult to measure code quality using machine tools, we have decided to grade our new tests using a human assessor and a simple evaluation framework. 
 
-The each objective in the evaluation framework is a common-sense best practice for unit testing. Together, the objectives ensure that our tests will be meaningful, maintainable, and readable. 
+Each objective in the evaluation framework is a common-sense best practice for unit testing. Together, the objectives ensure that our tests will be meaningful, maintainable, and readable. 
 
 
 ## How the framework is organized
@@ -31,20 +31,3 @@ Testing objectives are described below. Much more detail about each objective ca
 | Format Tests | Write Readable Tests | Do test methods follow clean code practices? Do test methods display the same use of conventions, factoring and abstractions expected in other source code? |
 | Format Tests| Use Good Test Names | Are there multiple tests? Do the names of test methods describe what the test does? |
 | Format Tests | Test One Concept at a Time | Are there multiple tests? Does each test have a clear goal? |
-
-
-## How test classes are evaluated
-
-Assessment follows these rules:
-
-- Tests will be read and assessed whenever test code is checked in.
-- The assessor will decide whether your tests achieve a given objective. 
-- The assessor will always try to give you credit when your tests make an effort to achieve an objective. 
-- In order to be accepted, test classes **must meet all of the objectives** in *Initiate Tests* and *Run Tests*. 
-- Additionally, aiming to meet the objectives in *Format Tests* is highly recommended. Well-formatted tests are much easier to write. Use this to your advantage.
-
-All assessment is done by the same team member so that the framework can be applied evenly across the team.
-
-We encourage two-way communication between yourself and the assessor. The assessor will provide feedback about each test class, which may include fixes to implement before the test class is accepted. On the other hand, you should feel free to contact the assessor at any time to ask questions or discuss concerns.
-
-Don't be freaked out by the word **"assessed"**. The assessor's job is to support you. Feel free to ask questions and talk about difficulties you are encountering. Assessments **do not affect your job**. We're assessing tests to compare the quality of our test classes, not the quality of our developers.

@@ -25,7 +25,7 @@ Some developers like to extend the Arrange/Act/Assert pattern to Arrange/**Asser
 public class Model_CoffeeMaker_Test {
     static testmethod void testMethod() {
         Model_CoffeeMaker maker = new Model_CoffeeMaker(20) // 20 ounce capacity
-        System.assert( maker.pourCoffee() <> null );
+        System.assert( maker.pourCoffee() != null );
     }
 }
 ```

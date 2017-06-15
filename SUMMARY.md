@@ -4,6 +4,7 @@
 
 * [Introduction](README.md)
 * [Framework Overview](overview/framework.md)
+* [How Test Classes Are Evaluated](overview/evaluation.md)
 * [Example: Applying the Framework](overview/example.md)
 
 ## Test Objectives
