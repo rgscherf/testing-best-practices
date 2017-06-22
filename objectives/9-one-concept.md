@@ -6,12 +6,15 @@ Each of your tests should prove one, and only one, specific behavior about the t
 
 [Elsewhere](./4-assert.md) this documentation discussed the problem with tests like `System.assert(x != null)`. This test was too broad: it would pass when `x` took on almost any value. An example refactored this test into a more specific version.
 
-Successful test classes will include multiple specific tests like the one demonstrated above. Each test method will pick a concept and test the target method against that concept. [See here for examples of specific concepts](./6-valid-invalid). Separating each concept into its own method, [with a descriptive name](./7-readable), creates a readable, maintainable test class.
+Successful test classes will include multiple specific tests like the one demonstrated above. Each test method will pick a concept and test the target method against that concept. [See here for examples of specific concepts](./6-valid-invalid). Separating each concept into its own method, [with a descriptive name](./8-names), creates a readable, maintainable test class.
+
+By separating test methods from each other, it's much easier to see when you are [covering the entire target class](./5-branches.md) and [taking different inputs into account](./6-valid-invalid.md).
 
 You know you have a one-concept test when:
 
 - You can give the test method a clear name (if the name contains the word 'and', you may have a problem!)
 - Your test contains a single assertion or a small number of assertions testing related information.
+
 
 ## To receive credit for this objective: 
 

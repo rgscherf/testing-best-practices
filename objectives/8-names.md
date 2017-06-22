@@ -2,7 +2,7 @@
 
 > Are there multiple tests? Do the names of test methods describe what the test does? 
 
-The names of test methods should describe what the method does. A test method named `testMethod1` doesn't contain any information about the test. A test method named `someMethod_withNullInput_returnsFalse` is an excellent summary of the test itself.
+The names of test methods should describe what the method does. A test method named `testMethod1` doesn't contain any information about the test. A test method named `someMethod_withNullInput_returnsFalse` is an excellent summary of what the test does.
 
 Why are test names important? When running tests in most editors, the test results are sorted by test name. Running your tests and receiving a list like the following:
 
@@ -16,11 +16,11 @@ SUCCESS: queryRealTimeGroupID_expexpectedGroupDoesntExist_raisesQueryException -
 SUCCESS: queryRealTimeGrpID_always_returnsExpectedGroup - in 87ms
 ```
 
-... makes it easy to figure out what's wrong if your tests start failing as a result of changes elsewhere in the code base.
+... makes it easy to figure out what's wrong if your tests start to fail.
 
 ## Test naming convention
 
-We recommend the following convention for test names:
+You are highly encouraged to use the following convention for test names:
 
 `(method name)_(conditions for the test)_(expected result)`
 

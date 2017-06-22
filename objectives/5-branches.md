@@ -2,7 +2,7 @@
 
 > Does the test class make a good effort to test all code branches? Does the test class exercise all public methods in the target class?
 
-Test methods should test all logic branches in the target class. This rule is critical in cases where different logic branches can execute vastly different computations.
+Test methods should test all logic branches in the target class. This rule is critical in cases where logic branches lead to substantially different computations.
 
 Test classes should test all public methods in the target class. It doesn't matter if your test class has already reached 75% code coverage; **all public methods must be tested**.
 

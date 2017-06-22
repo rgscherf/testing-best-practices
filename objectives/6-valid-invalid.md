@@ -12,17 +12,17 @@ All public methods in the target class should be tested with a set of both valid
 - For collection types, a large (> 200 entries) collection 
 - For reference types, an object with `null` fields that the target method will access
 
-For methods which don't take inputs, examine the target method's source code and imagine situations where the method makes assumptions about its environment that might not be true:
+For methods which don't take inputs, examine the target method's source code and imagine situations where the method makes assumptions about its environment that might not be true. These scenarios may include:
 
 - Does the method expect certain information to exist in the database?
 - Does the method expect another field to be instantiated on itself before it is called?
 - Does the method make a network call that might fail?
 
-Try your best to create circumstances that will raise exceptions. Knowing what kinds of inputs the target class will accept is a vital part of keeping our code base robust. It is also useful when using tests as documentation.
+Try your best to create circumstances that will raise exceptions. Knowing what kinds of inputs the target class will accept is a vital part of keeping our code robust. It is also useful when using tests as documentation.
 
 If you encounter an unexpected return value (such as `null` or an exception) as a result of any of these inputs, your next move depends on the state of the target method.
 
-- If you are currently designing the target method, consider whether this unexpected value is what *should* be returned from the given input. If not, change the method accordingly.
+- If you are currently designing the target method, consider whether this unexpected value makes sense as a return value. Will users of this method agree that the return value makes sense? If not, change the method accordingly.
 - If you are writing the test class at a later time, perhaps long after another developer has written the target method, consider the result to be intended behavior unless it truly looks like a bug.
 
 

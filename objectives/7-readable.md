@@ -4,11 +4,11 @@
 
 Test code is source code. Your test classes should follow all of our coding best practices.
 
-Remember that each test method should read clearly to somebody who had never seen your test class or the target class before. Variable names should be descriptive. Code should be tidy with unimportant details (such as routine object generation) factored away into utility methods.
+Remember that each test method should be clear to somebody who had never seen your test class or the target class before. Variable names should be descriptive. Code should be tidy with unimportant details (such as routine object generation) factored away into utility methods.
 
 Because test code can be repetitive, pay special attention to refactoring code that appears in related test methods. Group this code together--it will make your tests more readable and more maintainable.
 
-Use good taste. Don't overabstract your code. Every test method should still display a top-level Arrange/Act/Assert pattern.
+Use good taste. Don't overabstract your code. Every test method should still display a top-level Arrange/Act/Assert pattern. **The goal is to make tests readable, not to minimize lines of code.**
 
 ## To receive credit for this objective: 
 

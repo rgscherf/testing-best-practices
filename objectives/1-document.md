@@ -2,7 +2,9 @@
 
 > Are tests methods and classes documented at standards equivalent to other source code?
 
-Your code is meant to be read. It should display good use of method/variable names and clear logic that makes your intention clear. This isn't always possible, however--and when things get tricky, you are required to comment your code. 
+Your code is meant to be read. It should display good use of method/variable names. It should also make your intention clear with logic that is easy to follow. 
+
+This isn't always possible. When things get tricky, you are required to comment your code so that other developers can understand it.
 
 ## To receive credit for this objective: 
 

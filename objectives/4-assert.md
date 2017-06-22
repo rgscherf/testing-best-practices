@@ -30,12 +30,12 @@ public class Model_CoffeeMaker_Test {
 }
 ```
 
-Assuming the test in `Model_CoffeeMaker_Test` passes, the only things we know about `Model_CoffeeMaker.pourCoffee()` is that it:
+Assuming the test in `Model_CoffeeMaker_Test` passes, the only things we know about `Model_CoffeeMaker.pourCoffee()` are that:
 
-1. Does not raise an exception, and
-2. Does not return `null`.
+1. It does not raise an exception, and
+2. It does not return `null`.
 
-Almost anything else could be happen when `.pourCoffee()` is called. The assertion here is not specific enough; It should tell us something precise about the result of the method call.
+Almost anything else could be happen when `.pourCoffee()` is called. The assertion here is not specific enough. It should tell us something precise about the result of the method call.
 
 
 ### Meaningful assertions
@@ -66,7 +66,7 @@ public class Model_CoffeeMaker_Test {
 }
 ```
 
-This test is clear about what `pourCoffee()` does. We can even read the test as a kind of documentation or example of how the method works. Imagine the same test, but with the Assert clauses replaced with `!= null`. Much less clear, right?
+This test is clear about what `pourCoffee()` does. We can even read the test as a kind of example of how the method works. Imagine the same test, but with the Assert clauses replaced with `!= null`. Much less specific, and much less clear.
 
 Note that this method only tests one aspect of `pourCoffee()`'s behavior. For example, what would have happened if `Model_CoffeeMaker` [were instantiated with fewer than 8 ounces of liquid](./6-valid-invalid.md)? This test doesn't know or care--checking that behavior [is the responsibility of another test](./9-one-concept.md).
 
