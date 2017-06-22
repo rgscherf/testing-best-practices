@@ -2,7 +2,7 @@
 
 > If state is required for the test, is it assembled in an organized way? Is state generated using TestFactory_* classes where possible?
 
-The first step in testing any object-oriented code is assembling state required for the test. Sometimes this is simple, as in (the framework overview example)[../overview/example.md]. Sometimes it is much more complicated, requiring generation of multiple levels of objects.
+The first step in testing any object-oriented code is assembling state required for the test. Sometimes this is simple, as in [the framework overview example](../overview/example.md). Sometimes it is much more complicated, requiring generation of multiple levels of objects.
 
 The framework state assembly to be logical and organized. In addition, where possible, assembly should be factored away using the TestFactory_* family of classes. These utility classes greatly simplify the generation of complex object heirarchies, and are more likely to be bug-free than code written specifically for your test class.
 
